@@ -1,19 +1,17 @@
-// Prompts för att ta emot inmatning av nummer
+// Prompts för att ta emot inmatning av nummer och operation
 let firstNumber = parseFloat(prompt("Ange det första talet:"));
 let operation = prompt("Vill du använda +, -, *, /, % eller **");
 let secondNumber = parseFloat(prompt("Ange det andra talet:"));
 
-let result; 
+let result;
 
 // if-sats för att kolla om vi har rätt inmatning
 if (isNaN(firstNumber) || isNaN(secondNumber)) {
+
     alert("Felaktig inmatning, testa skriv in ett nummer istället!");
     console.log("Felaktig inmatning");
+
 } else {
-
-   // Prompts för att ta emot inmatning av operation
-   
-
    // if-sats för att genomföra beräkningar
 
    // Addition
@@ -69,10 +67,11 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
         alert(`Exponenten är: ${result}`);
         console.log(result);
 
+   // Felmeddelande om användare skriver in fel vi val av operation
      } else {
 
-      // Felmeddelande om användare skriver in fel vi val av operation
         alert("Ogiltig operation, använd +, -, *, /, % eller **");
         console.log("Ogiltig operation");
+
      }
 }
