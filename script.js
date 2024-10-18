@@ -1,8 +1,8 @@
 // Prompts för att ta emot inmatning av nummer
 let firstNumber = parseFloat(prompt("Ange det första talet:"));
+let operation = prompt("Vill du använda +, -, *, /, % eller **");
 let secondNumber = parseFloat(prompt("Ange det andra talet:"));
 
-let operation;
 let result; 
 
 // if-sats för att kolla om vi har rätt inmatning
@@ -12,7 +12,7 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
 } else {
 
    // Prompts för att ta emot inmatning av operation
-   operation = prompt("Vill du använda +, -, *, /, % eller **");
+   
 
    // if-sats för att genomföra beräkningar
 
